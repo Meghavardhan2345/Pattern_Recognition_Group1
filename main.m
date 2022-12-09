@@ -1,13 +1,9 @@
 clc
 close all
 clear 
-g='C:\Users\megha\Downloads\prproject';
-g2=dir(g);
-g1=fullfile(g,'\',g2(3).name);
-g3=dir(g1);
-g4=fullfile(g1,'\',g3(3).name);
-disp(g3(3).name)
-x1=importdata(g4);
+g='train.txt';
+x1=importdata(g)
+size(x1)
   [r,c]=size(x1);
   mean=(zeros(c-1));
   vari=(zeros(c-1));
